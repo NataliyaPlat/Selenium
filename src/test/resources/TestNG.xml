@@ -1,0 +1,7 @@
+<suite name ="Testing">
+    <test name ="TitleTest" preserve-order = "false">
+        <classes>
+            <class name = "MySweetProgram"/>
+        </classes>
+    </test>
+</suite>
