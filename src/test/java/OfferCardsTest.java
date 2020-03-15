@@ -3,9 +3,9 @@ import org.openqa.selenium.WebElement;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 import java.util.List;
+//1. Assert only 10 cards appears on page
 
-
-public class OfferListsTest extends BaseTest {
+public class OfferCardsTest extends BaseTest {
 
     @Test
     public void OfferListSizeTest () throws InterruptedException{
@@ -14,6 +14,9 @@ public class OfferListsTest extends BaseTest {
         List<WebElement> cardLists = driver.findElements(By.cssSelector("[class*='card-shape']"));
         Assert.assertEquals(cardLists.size(),10);
     }
+    //2. Filter by service type and make sure that only services with given service type are shown on the page
+
+
     @Test
     public void FilterByServiceTypeTest() throws InterruptedException{
         driver.get("https://testkwidos.tk/offer/search");
