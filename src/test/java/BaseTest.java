@@ -5,10 +5,11 @@ import org.openqa.selenium.remote.RemoteWebDriver;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeMethod;
 
-import java.net.MalformedURLException;
-import java.net.URL;
+// Create Before Method and After methods to close and open browser
+// //Create BaseTest file and move setup and teardown there
 
-public class BaseTest {
+
+        public class BaseTest {
     WebDriver driver;
     @BeforeMethod
     public void setUp()  {
@@ -17,6 +18,7 @@ public class BaseTest {
     }
     @AfterMethod
     public void tearDown(){
+
         driver.quit();
     }
 }
