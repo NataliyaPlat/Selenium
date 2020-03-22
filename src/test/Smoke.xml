@@ -1,8 +1,8 @@
 <suite name ="Smoke test">
     <test name ="TitleTest" preserve-order = "false">
-        <classes>
-            <class name = "LoginTests"/>
-            <method name="LoginWrongCredentialTest"/>
-        </classes>
+            <class name = "LoginTests">
+            <method name="LoginSuccessTest">
+            </method>
+        </class>
     </test>
 </suite>
