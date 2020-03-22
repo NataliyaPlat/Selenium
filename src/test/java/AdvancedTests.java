@@ -4,7 +4,7 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.interactions.Action;
 import org.openqa.selenium.interactions.Actions;
 import org.testng.annotations.Test;
-
+// implementation of advanced methods in my tests
 public class AdvancedTests extends BaseTest{
     @Test
     public void  multipleTabs(){
@@ -14,7 +14,7 @@ public class AdvancedTests extends BaseTest{
         driver.switchTo().window(mainWindow);
     }
     @Test
-    public void scrollingTets(){
+    public void scrolling(){
         driver.get("https://kwidos.tk/contractor/search");
         WebElement job = driver. findElement(By.xpath("//*[contains(text(), 'NEU')]"));
         JavascriptExecutor js = (JavascriptExecutor) driver;
